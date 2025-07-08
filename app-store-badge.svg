@@ -1,0 +1,33 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="appStoreGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="200" height="60" rx="8" fill="url(#appStoreGradient)" stroke="#333" stroke-width="1"/>
+  
+  <!-- Apple Logo -->
+  <g transform="translate(15, 12)">
+    <path d="M25.769 8.5c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5-1.5-.673-1.5-1.5.673-1.5 1.5-1.5zm-7.5 7.5c0-4.142 3.358-7.5 7.5-7.5s7.5 3.358 7.5 7.5-3.358 7.5-7.5 7.5-7.5-3.358-7.5-7.5z" fill="white"/>
+    <path d="M22.5 5.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5z" fill="white"/>
+    <path d="M20 12c0-2.761 2.239-5 5-5s5 2.239 5 5-2.239 5-5 5-5-2.239-5-5z" fill="none" stroke="white" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 苹果图标 -->
+  <g transform="translate(20, 15)">
+    <path d="M15.5 2c-1.5 0-2.5 1-2.5 2.5 0 1 .5 1.5 1 2 .5.5 1 1 1 2s-.5 1.5-1 2c-.5.5-1 1-1 2 0 1.5 1 2.5 2.5 2.5s2.5-1 2.5-2.5c0-1-.5-1.5-1-2-.5-.5-1-1-1-2s.5-1.5 1-2c.5-.5 1-1 1-2C18 3 17 2 15.5 2z" fill="white"/>
+    <path d="M16.5 1c.5 0 1 .5 1 1s-.5 1-1 1-1-.5-1-1 .5-1 1-1z" fill="white"/>
+  </g>
+  
+  <!-- 文字 -->
+  <g transform="translate(55, 20)">
+    <!-- "Download on the" -->
+    <text x="0" y="8" font-family="Arial, sans-serif" font-size="9" fill="white" opacity="0.8">在此下载</text>
+    
+    <!-- "App Store" -->
+    <text x="0" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">App Store</text>
+  </g>
+</svg>

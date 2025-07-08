@@ -1,0 +1,91 @@
+<svg width="250" height="200" viewBox="0 0 250 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="step2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="250" height="200" rx="12" fill="url(#step2Gradient)" stroke="#10b981" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- AI大脑图标 -->
+  <g transform="translate(125, 80)">
+    <!-- 大脑轮廓 -->
+    <path d="M-25 -15 Q-30 -25 -20 -30 Q-10 -35 0 -30 Q10 -35 20 -30 Q30 -25 25 -15 Q30 -5 25 5 Q20 15 10 20 Q0 25 -10 20 Q-20 15 -25 5 Q-30 -5 -25 -15 Z" fill="url(#brainGradient)"/>
+    
+    <!-- 神经网络线条 -->
+    <g stroke="white" stroke-width="1.5" fill="none">
+      <path d="M-15 -10 Q-5 -5 5 -10"/>
+      <path d="M-10 0 Q0 5 10 0"/>
+      <path d="M-15 10 Q-5 15 5 10"/>
+      <circle cx="-15" cy="-10" r="2" fill="white"/>
+      <circle cx="5" cy="-10" r="2" fill="white"/>
+      <circle cx="-10" cy="0" r="2" fill="white"/>
+      <circle cx="10" cy="0" r="2" fill="white"/>
+      <circle cx="-15" cy="10" r="2" fill="white"/>
+      <circle cx="5" cy="10" r="2" fill="white"/>
+    </g>
+  </g>
+  
+  <!-- 数据流动效果 -->
+  <g>
+    <!-- 左侧输入数据 -->
+    <rect x="20" y="60" width="40" height="30" rx="4" fill="#3b82f6" opacity="0.8"/>
+    <text x="40" y="78" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">图像</text>
+    
+    <!-- 箭头1 -->
+    <path d="M65 75 L95 75" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowhead1)"/>
+    
+    <!-- 右侧输出数据 -->
+    <rect x="190" y="50" width="40" height="20" rx="4" fill="#10b981" opacity="0.8"/>
+    <text x="210" y="62" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">卡路里</text>
+    
+    <rect x="190" y="75" width="40" height="20" rx="4" fill="#f59e0b" opacity="0.8"/>
+    <text x="210" y="87" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">蛋白质</text>
+    
+    <rect x="190" y="100" width="40" height="20" rx="4" fill="#ef4444" opacity="0.8"/>
+    <text x="210" y="112" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">营养素</text>
+    
+    <!-- 箭头2 -->
+    <path d="M155 80 L185 75" stroke="#10b981" stroke-width="2" marker-end="url(#arrowhead2)"/>
+    <path d="M155 80 L185 85" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowhead3)"/>
+    <path d="M155 80 L185 110" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowhead4)"/>
+  </g>
+  
+  <!-- 处理指示器 -->
+  <g transform="translate(125, 130)">
+    <circle cx="-15" cy="0" r="3" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="3" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="15" cy="0" r="3" fill="#8b5cf6">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- 箭头标记 -->
+  <defs>
+    <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+  </defs>
+  
+  <!-- 文字说明 -->
+  <text x="125" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">AI智能分析</text>
+</svg>
